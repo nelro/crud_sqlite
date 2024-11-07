@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Productos</title>
     <link rel="stylesheet" href="../static/css/styles_pro.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
+    <!-- Menú de Navegación -->
+    {%include 'menu.html'%}
 
     <div class="container">
         <h2 class="table-title">Lista de Productos</h2>
@@ -37,10 +40,10 @@
                     <td>{{item.cantidad}}</td>
                     <td>{{item.precio}} Bs</td>
                     <td>
-                        <a href="{{url_for('editar_producto')}}" class="btn edit-btn">Editar</a>
+                        <a href="/capturar_producto/{{item['id_pro']}}" class="btn edit-btn">Editar</a>
                     </td>
                     <td>
-                        <a href="{{url_for('eliminar',id_pro=item.id_pro)}}" class="btn delete-btn">Eliminar</a>
+                        <a href="/eliminar/{{item['id_pro']}}" class="btn delete-btn">Eliminar</a>
                     </td>                    
                 </tr>
                 {%endfor%}

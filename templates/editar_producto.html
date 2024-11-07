@@ -12,29 +12,26 @@
         <h2 class="form-title">Modificar Producto</h2>
         
         <!-- Formulario de agregar producto -->
-        <form action="#" method="POST" class="product-form">
-            <div class="form-group">
-                <label for="id_pro">ID Producto</label>
-                <input type="number" id="id_pro" name="id_pro" required>
-            </div>
+        <form action="{{url_for('editar_producto',id_pro=enviar_datos_pro['id_pro'])}}" method="POST" class="product-form">
+            
 
             <div class="form-group">
                 <label for="descripcion">Descripción</label>
-                <input type="text" id="descripcion" name="descripcion" required>
+                <input type="text" id="descripcion" name="descripcion", value="{{enviar_datos_pro['descripcion']}}" required>
             </div>
 
             <div class="form-group">
                 <label for="cantidad">Cantidad</label>
-                <input type="number" id="cantidad" name="cantidad" required>
+                <input type="number" id="cantidad" name="cantidad" value="{{enviar_datos_pro['cantidad']}}" required>
             </div>
 
             <div class="form-group">
                 <label for="precio">Precio</label>
-                <input type="text" id="precio" name="precio" required>
+                <input type="text" id="precio" name="precio" value="{{enviar_datos_pro['precio']}}" required>
             </div>
 
             <div class="form-actions">
-                <a href="#" class="btn-submit">Agregar Producto</a>
+                <button type="submit" class="btn-submit">Agregar Producto</button>
                 <a href="{{url_for('productos')}}" class="btn-reset">Cancelar</a>
             </div>
         </form>

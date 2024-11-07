@@ -12,9 +12,18 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 .navbar {
     background-color: #343a40;
     padding: 10px 0;
+    position: fixed; /* Mantiene el menú en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.container {
+    margin-top: 60px; /* Deja espacio para el menú */
 }
 
 .navbar-container {
