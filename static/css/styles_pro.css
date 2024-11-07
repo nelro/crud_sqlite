@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título de la tabla */
+.table-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para el botón 'Nuevo Producto' */
+.new-product-btn {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.new-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de la tabla */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Hace que las columnas se ajusten al contenido */
+    margin-top: 20px;
+}
+
+.product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    word-wrap: break-word;  /* Asegura que el texto largo se ajuste dentro de las celdas */
+}
+
+.product-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.product-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para los botones Editar y Eliminar */
+.product-table td button {
+    padding: 5px 10px;
+    margin: 2px;  /* Reducimos el margen entre los botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: rgb(26, 25, 25);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+/* Opcional: cambiar color de fondo cuando se pasa el ratón sobre el botón */
+.edit-btn:hover {
+    background-color: #b6986c;  /* Un tono más oscuro de amarillo */
+}
+
+.delete-btn:hover {
+    background-color: #6e6667;  /* Un tono más oscuro de rojo */
+}
+
+/* Aseguramos que las celdas tengan el mínimo padding */
+.product-table td {
+    padding: 5px 10px; /* Reducimos el padding en las celdas */
+}
+
+.product-table td button:hover {
+    opacity: 0.8;
+}
+
+
+/* Estilo para los enlaces que se ven como botones */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a.btn:hover {
+    background-color: #215023;
+}
+
+/* Estilo común para los enlaces que se ven como botones */
+a.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para el enlace "Editar" */
+a.edit-btn {
+    background-color: #eede02; /* Verde */
+    color: rgb(34, 34, 34);
+}
+
+a.edit-btn:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Estilo para el enlace "Eliminar" */
+a.delete-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+a.delete-btn:hover {
+    background-color: #555555; /* Rojo más oscuro */
+}

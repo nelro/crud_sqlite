@@ -1,0 +1,95 @@
+/* Estilo general para la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del formulario */
+.form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para los botones */
+a.btn-submit, a.btn-reset {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+/* Botón Agregar Producto */
+a.btn-submit {
+    background-color: #28a745;
+    color: white;
+}
+
+a.btn-submit:hover {
+    background-color: #218838;
+}
+
+/* Botón Cancelar */
+a.btn-reset {
+    background-color: #dc3545;
+    color: white;
+}
+
+a.btn-reset:hover {
+    background-color: #c82333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    a.btn-submit, a.btn-reset {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

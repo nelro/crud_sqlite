@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="../static/css/styles_nue_pro.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="form-title">Agregar Nuevo Producto</h2>
+        
+        <!-- Formulario de agregar producto -->
+        <form action="#" method="POST" class="product-form">
+            <div class="form-group">
+                <label for="id_pro">ID Producto</label>
+                <input type="number" id="id_pro" name="id_pro" required>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcion" name="descripcion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="text" id="precio" name="precio" required>
+            </div>
+
+            <div class="form-actions">
+                <a href="#" class="btn-submit">Agregar Producto</a>
+                <a href="{{url_for('productos')}}" class="btn-reset">Cancelar</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

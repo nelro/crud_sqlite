@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" href="../static/css/styles_pro.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="table-title">Lista de Productos</h2>
+        
+        <!-- Botón Nuevo -->
+        <div class="new-product-btn">
+            <a href="{{url_for('nuevo_producto')}}" class="btn new-btn">Nuevo Producto</a>
+        </div>
+
+        <!-- Tabla de productos -->
+        <table class="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Leche Condensada</td>
+                    <td>10</td>
+                    <td>20.50 Bs</td>
+                    <td>
+                        <a href="{{url_for('editar_producto')}}" class="btn edit-btn">Editar</a>
+                    </td>
+                    <td>
+                        <a href="#" class="btn delete-btn">Eliminar</a>
+                    </td>                    
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
